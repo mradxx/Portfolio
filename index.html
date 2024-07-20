@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <!-- style for full web -->
+    <style>
+       *{
+           padding: 0%;
+           margin: 0;
+           box-sizing: border-box;
+           font-family: 'Poppins',sans-serif;
+           background: url(images/bg.jpeg);
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-attachment: fixed;
+           background-position: center;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+     <header>
+        <nav class="navbar">
+            <ul class="Desktop" >
+                <li ><a href="">Aadhithian</a></li>
+                <li class="hidenav"><a href="">Home</a></li>
+                <li class="hidenav"><a href="">About</a></li>
+                <li class="hidenav"><a href="">Projects</a></li>
+                <li class="hidenav"><a href="">Contact</a></li>
+                <li class="hidenav"><a href="">Links</a></li>
+                <li onclick=showsidebar()><i class="fa-solid fa-bars"></i></li>
+            </ul>
+            <ul class="Mobile">
+                <li class="xmark" onclick=hidesidebar()><a href="">Aadhithian</a><a href="" ><i class="fa-solid fa-xmark"></i></a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Links</a></li>
+                
+            </ul>
+        </nav>
+     </header>
+<script>
+    function hidesidebar(){
+        const sidebar=document.querySelector('.Mobile');
+        sidebar.style.display='none';
+    }
+    function showsidebar(){
+        const sidebar=document.querySelector('.Mobile');
+        sidebar.style.display='flex';
+    }
+</script>
+</body>
+</html>
